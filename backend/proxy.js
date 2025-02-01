@@ -1,6 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Enable CORS for all requests
 app.use((req, res, next) => {
@@ -23,7 +24,6 @@ app.get('/proxy', async (req, res) => {
 });
 
 // Start the proxy server on port 3000
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+app.listen(3000, () => {
     console.log('Proxy server is running on port 3000');
 });
