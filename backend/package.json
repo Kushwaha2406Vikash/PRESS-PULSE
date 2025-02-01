@@ -1,4 +1,6 @@
 {
+  "name": "backend",
+  "main": "proxy.js",
   "scripts": {
     "start": "node proxy.js"
   },
